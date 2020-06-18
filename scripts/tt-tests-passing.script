@@ -1,0 +1,72 @@
+Script started on Mon 20 Apr 2020 07:32:54 PM EDT
+[?1034hbash-4.2$ kernel[K[K[K[K[K[Ksys16`[K1 kernel
+sys161: System/161 release 1.14, compiled Sep  4 2014 10:34:58
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+rostawal-pfonash system version 2 (ASST2 #2)
+
+
+OS/161 using Multi Level Feedback Queue scheduler
+Cpu is MIPS r2000/r3000
+2888k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: ?t
+
+OS/161 tests menu
+    [at]  Array test                    [sy1] Semaphore test                
+    [bt]  Bitmap test                   [sy2] Lock test             (1)     
+    [qt]  Queue test                    [sy3] CV test               (1)     
+    [km1] Kernel malloc test            [fs1] Filesystem test               
+    [km2] kmalloc stress test           [fs2] FS read stress        (4)     
+    [tt1] Thread test 1                 [fs3] FS write stress       (4)     
+    [tt2] Thread test 2                 [fs4] FS write stress 2     (4)     
+    [tt3] Thread test 3                 [fs5] FS create stress      (4)     
+
+    (1) These tests will fail until you finish the synch assignment.
+    (4) These tests will fail until you finish the file system assignment.
+
+Operation took 0.103807080 seconds
+OS/161 kernel [? for menu]: tt1
+Starting thread test...
+012345677777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222234444444444444444444444444444444444444444444444444444444444444444444444445555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555566666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333344444444444444444444444444444444444444444444444
+Thread test done.
+Operation took 0.312196360 seconds
+OS/161 kernel [? for menu]: tt2
+Starting thread test 2...
+0123456701245673
+Thread test 2 done.
+Operation took 0.658853840 seconds
+OS/161 kernel [? for menu]: tt3
+Starting thread test 3 (5 [sleepalots], 2 {computes}, 1 waker)
+[1][2][3][4][0]{1: 200}{0: 37}[3][1][4][2][2]{1: 218}{0: 254}[0][1][4][3]{1: 59}[2][3]{0: 47}[1][4][3][0][1][2][4][3]{1: 111}[3]{0: 252}[1][0][4][2][3][0]{1: 215}[4]{0: 84}[1][3][0][1][2][3][4]{1: 106}{0: 182}[0][1][4][2]{1: 200}{0: 142}[4][1][0][3][4][0][2][0][1]{1: 86}{0: 92}[3][4][1][2][0][4]{1: 209}{0: 209}[0][3][2][1][4][2][0]{1: 48}{0: 38}[3][4][0][1][2][3][4][1][0][1][3][2][4][2][1][0][3][2][4][1][0][2][3][4][2][0][2][3][1][2][0][4][1][3][0]
+Thread test 3 done
+Operation took 12.546872000 seconds
+OS/161 kernel [? for menu]: q
+Shutting down.
+The system is halted.
+sys161: 688634121 cycles (345968791k, 0u, 342665330i)
+sys161: 5986 irqs 0 exns 0r/0w disk 17r/3305w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 27.538305 seconds (25.0064 mhz)
+sys161: Elapsed virtual time: 27.545364840 seconds (25 mhz)
+bash-4.2$ exit
+exit
+
+Script done on Mon 20 Apr 2020 07:34:00 PM EDT

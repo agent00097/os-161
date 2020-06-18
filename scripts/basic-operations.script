@@ -1,0 +1,80 @@
+Script started on Mon 20 Apr 2020 07:42:21 PM EDT
+[?1034hbash-4.2$ sys161 kernel
+sys161: System/161 release 1.14, compiled Sep  4 2014 10:34:58
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+rostawal-pfonash system version 2 (ASST2 #2)
+
+
+OS/161 using Multi Level Feedback Queue scheduler
+Cpu is MIPS r2000/r3000
+2888k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: ?
+
+OS/161 kernel menu
+    [?o] Operations menu                [kh] Kernel heap stats              
+    [?t] Tests menu                     [q] Quit and shut down              
+
+Operation took 0.023139360 seconds
+OS/161 kernel [? for menu]: ?t o
+
+OS/161 operations menu
+    [s]       Shell                     [cd]      Change directory          
+    [p]       Other program             [pwd]     Print current directory   
+    [mount]   Mount a filesystem        [sync]    Sync filesystems          
+    [unmount] Unmount a filesystem      [panic]   Intentional panic         
+    [bootfs]  Set "boot" filesystem     [q]       Quit and shut down        
+    [pf]      Print a file              
+
+Operation took 0.059751040 seconds
+OS/161 kernel [? for menu]: pwd
+emu0:
+Operation took 0.000970440 seconds
+OS/161 kernel [? for menu]: kh
+Subpage allocator status:
+at 0x80032000: size 64    61/64 free
+   .............................................................***
+at 0x80031000: size 512   7/8 free
+   .......*
+at 0x80030000: size 32    105/128 free
+   ................................................................
+   .........................................***********************
+at 0x8002f000: size 128   29/32 free
+   .............................***
+at 0x8002e000: size 16    193/256 free
+   ................................................................
+   ................................................................
+   ................................................................
+   .***************************************************************
+Operation took 0.053722680 seconds
+OS/161 kernel [? for menu]: p testbin/sink
+Operation took 0.000359080 seconds
+OS/161 kernel [? for menu]: p testbin/forktest
+Operation took 0.000391240 seconds
+OS/161 kernel [? for menu]: (program name unknown): Starting.
+001111222222223333333333333333
+(program name unknown): Complete.
+
+bash-4.2$ exit
+exit
+
+Script done on Mon 20 Apr 2020 07:43:57 PM EDT

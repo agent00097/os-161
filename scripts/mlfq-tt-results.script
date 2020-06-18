@@ -1,0 +1,71 @@
+Script started on Mon 20 Apr 2020 07:46:24 PM EDT
+[?1034hbash-4.2$ exitsys161 kernel[C[C[C[C[C[C[C[C[C[Cexit[Ksys161 kernel
+sys161: System/161 release 1.14, compiled Sep  4 2014 10:34:58
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+rostawal-pfonash system version 2 (ASST2 #2)
+
+
+OS/161 using Multi Level Feedback Queue scheduler
+Cpu is MIPS r2000/r3000
+2888k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: ?
+
+OS/161 kernel menu
+    [?o] Operations menu                [kh] Kernel heap stats              
+    [?t] Tests menu                     [q] Quit and shut down              
+
+Operation took 0.023168840 seconds
+OS/161 kernel [? for menu]: ?t
+
+OS/161 tests menu
+    [at]  Array test                    [sy1] Semaphore test                
+    [bt]  Bitmap test                   [sy2] Lock test             (1)     
+    [qt]  Queue test                    [sy3] CV test               (1)     
+    [km1] Kernel malloc test            [fs1] Filesystem test               
+    [km2] kmalloc stress test           [fs2] FS read stress        (4)     
+    [tt1] Thread test 1                 [fs3] FS write stress       (4)     
+    [tt2] Thread test 2                 [fs4] FS write stress 2     (4)     
+    [tt3] Thread test 3                 [fs5] FS create stress      (4)     
+
+    (1) These tests will fail until you finish the synch assignment.
+    (4) These tests will fail until you finish the file system assignment.
+
+Operation took 0.103635520 seconds
+OS/161 kernel [? for menu]: tt1
+Starting thread test...
+012345677777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111222222222222222222222222222222222222222222222222222223333333333333333333333333333333333333333333333333333344444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555556666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666611111111111111111111111111111222222223333333333333333333333333333333333333333333333333333333333333333336666666666666666666666662222222222222222222222222222222222222222222222222222222222
+Thread test done.
+Operation took 0.341708120 seconds
+OS/161 kernel [? for menu]: tt2
+Starting thread test 2...
+0123456701245673
+Thread test 2 done.
+Operation took 0.658840160 seconds
+OS/161 kernel [? for menu]: tt3
+Starting thread test 3 (5 [sleepalots], 2 {computes}, 1 waker)
+[0][4][0]{1: 208}[3][2]{0: 209}[0][4][1][2][3][4]{1: 165}[0][1]{0: 155}[2][3][4][1][3]{1: 194}[1][3]{0: 245}[4][1][0][2][1][3]{1: 249}[4]{0: 238}[0][2][3][1][2][4]{1: 89}[0]{0: 122}[3][4][0][2][2][1]{1: 2}[0]{0: 248}[3][4][2][1][2][0][4][2]{1: 55}[0][1]{0: 142}[0][4][3][2]{1: 175}[0]{0: 252}[2][1][4][2][3][2][1][3][4]{1: 127}{0: 131}[2][0][0]{1: 101}[4]{0: 168}[1][3][2][4][1][0][3][4][0][2][1][1][2][4][3][0][1][0][4][2][3][1][0][4][1][4][3][1][3][3][3]
+Thread test 3 done
+Operation took 12.545794440 seconds
+OS/161 kernel [? for menu]: exit
+
+Script done on Mon 20 Apr 2020 07:47:22 PM EDT
